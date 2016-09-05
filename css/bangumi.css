@@ -1,0 +1,19 @@
+/* 总体 */
+*{
+	margin: 0;
+	padding: 0;
+}
+.mainContainer{
+	background-color: #e0e0e0;
+	box-shadow: 0px 0px;
+	margin:0 auto;
+}
+#top{
+	
+}
+#anime{
+	border-color: pink;
+}
+.navbar{
+	margin-bottom: 0px;
+}
