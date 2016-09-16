@@ -27,13 +27,13 @@
 	margin-top:10px;
 }
 .boxTitle>h4{
-	color:hotpink;
+	color: #2894FF;
 }
 .boxTitle>h4::before{
 	content:"";
 	position: relative;
 	border-radius: 3px;
-	background-color: hotpink;
+	background-color: #2894FF;
 	display: inline-block;
 	width:7px;
 	height:20px;
