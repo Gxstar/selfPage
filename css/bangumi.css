@@ -20,3 +20,27 @@
 .navbar{
 	margin-bottom: 0px;
 }
+/*右边*/
+.box{
+	border-radius: 5px;
+	background: white;
+	margin-top:10px;
+}
+.boxTitle>h4{
+	color:hotpink;
+}
+.boxTitle>h4::before{
+	content:"";
+	position: relative;
+	border-radius: 3px;
+	background-color: hotpink;
+	display: inline-block;
+	width:7px;
+	height:20px;
+	left:-5px;
+	top:4px;
+}
+.box>.boxTitle{
+	padding: 5px 10px;
+}
+/*动画*/
