@@ -1,8 +1,4 @@
 /* 总体 */
-*{
-	margin: 0;
-	padding: 0;
-}
 .mainContainer{
 	background-color: #e0e0e0;
 	box-shadow: 0px 0px;
@@ -20,7 +16,7 @@
 .navbar{
 	margin-bottom: 0px;
 }
-/*左边*/
+/*左边盒子*/
 .box{
 	border-radius: 5px;
 	background: white;
@@ -29,6 +25,9 @@
 }
 .boxTitle>h4{
 	color: #2894FF;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	border-bottom: 1px solid lightgray;
 }
 .boxTitle>h4::before{
 	content:"";
@@ -44,4 +43,35 @@
 .box>.boxTitle{
 	padding: 5px 10px;
 }
+.boxContent{
+	overflow: auto;
+}
+.boxContent li{
+	float:left;
+	width: calc(100% / 3);
+	padding:0 10px;
+}
+.boxFoot{
+	padding-bottom: 5px;
+	padding-right: 15px;
+}
+.boxFoot a{
+	color:#2894FF !important;
+}
 /*动画*/
+#anime li img{
+	width:100%;
+	border-radius: 4px;
+}
+#anime li img:hover{
+	border:3px solid #2894FF;
+	width:calc(100% - 6px);
+}
+#anime li{
+	text-align: center;
+
+}
+#anime a,#anime a:hover,#anime a:visited,#anime a:active{
+	color:black;
+	text-decoration: none;
+}
