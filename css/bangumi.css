@@ -20,11 +20,12 @@
 .navbar{
 	margin-bottom: 0px;
 }
-/*右边*/
+/*左边*/
 .box{
 	border-radius: 5px;
 	background: white;
 	margin-top:10px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, .37);
 }
 .boxTitle>h4{
 	color: #2894FF;
