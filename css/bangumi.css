@@ -57,8 +57,8 @@
 /*动画*/
 #anime li img{
 	width:100%;
-	border-radius: 4px;
-	border:2px solid white;
+	border-radius: 8px;
+	border:3px solid white;
 }
 #anime li img:hover{
 	border-color: #2894FF;
