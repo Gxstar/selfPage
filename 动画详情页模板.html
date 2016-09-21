@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>模板 动画-耿星的小站</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/css/resume.css" type="text/css">
+		<link rel="stylesheet" href="/css/bangumi.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/anime.css"/>
+		<!--[if lt IE 9]>
+			<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+			<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="container mainContainer">
+			<header id="top"><!-- 头部 -->
+				<img src="/img/深海少女.jpg" alt="头部图片" class="hidden-xs" style="width:100%;">
+				<nav class="navbar navbar-inverse" role="navigation">
+					<div class="container-fluid">
+						<!--导航头部和移动版按钮-->
+					    <div class="navbar-header">
+					    	<button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#navlist" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      	</button>
+					      	<a class="navbar-brand" href="..">耿星的小站</a>
+					    </div>
+					    <!-- 导航条内容 -->
+					    <div class="navbar-collapse collapse" id="navlist">
+					    	<!-- 导航搜索框 -->
+							<form action="" class="navbar-form navbar-right" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" id="searchBox" placeholder="搜索">
+								</div>
+								<button type="submit" class="btn btn-default" id="search">全网</button>
+								<button type="submit" class="btn btn-default" id="searchIn">站内</button>
+							</form>
+							<!-- 导航列表 -->
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="">首页</a></li>
+								<li><a href="/bangumi/anime">动画</a></li>
+								<li><a href="/bangumi/comic">漫画</a></li>
+								<li><a href="/bangumi/game">游戏</a></li>
+								<li><a href="/bangumi/daily">日记</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="box">
+				<div class="player">
+					<video width="600" height="" controls="controls">
+						<source src="http://sh189cloud001.oos-sh.ctyunapi.cn/738f9010-45c4-4847-b8f6-e0849c944bde?response-content-type=video/mp4&Expires=1474552062&response-content-disposition=attachment%3Bfilename%3D%22BilibiliJJ.COM-%25E3%2580%25901080P%25E3%2580%2591%25E5%25A6%2584%25E6%2583%25B3%25E5%25AD%25A6%25E7%2594%259F%25E4%25BC%259A%25E7%25AC%25AC%25E4%25B8%2580%25E5%25AD%25A3OVAOAD%25E3%2580%2590%25E4%25B8%25AD%25E6%2597%25A5%25E5%258F%258C%25E8%25AF%25AD%25E5%25AD%2597%25E5%25B9%2595%25E3%2580%2591_12%25E3%2580%2581%25E7%25AC%25AC%25E5%258D%2581%25E4%25BA%258C%25E9%259B%2586.mp4%22&AWSAccessKeyId=fb9c2f0f68c98e38b0a3&Signature=abBXfJqOib3pFuzYHhadCQ68ZUQ%3D" type="video/mp4"></source>
+						当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+					</video>
+				</div>
+			</div>
+		</div>
+		
+		<!--一些js文件-->
+		<script src="../js/duoshuo.js" type="text/javascript" charset="utf-8"></script>
+		<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="../js/bagumi.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
