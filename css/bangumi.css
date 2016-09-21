@@ -47,11 +47,6 @@
 .boxContent{
 	overflow: auto;
 }
-.boxContent li{
-	float:left;
-	width: calc(100% / 3);
-	padding:0 10px;
-}
 .boxFoot{
 	padding-bottom: 5px;
 	padding-right: 15px;
