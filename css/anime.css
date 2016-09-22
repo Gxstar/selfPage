@@ -1,4 +1,12 @@
-.box>.player{
-	text-align: center;
-	padding:30px;
+.player{
+	width:auto;
+	border-radius: 5px;
+	background-color: white;
+	margin-top: 10px;
+}
+.player>.boxTitle{
+	padding:5px 10px;
+}
+.playerContent{
+	padding:10px;
 }

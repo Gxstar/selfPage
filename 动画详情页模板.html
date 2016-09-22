@@ -51,12 +51,32 @@
 					</div>
 				</nav>
 			</header>
-			<div class="box">
-				<div class="player">
-					<video width="600" height="" controls="controls">
-						<source src="http://sh189cloud001.oos-sh.ctyunapi.cn/738f9010-45c4-4847-b8f6-e0849c944bde?response-content-type=video/mp4&Expires=1474552062&response-content-disposition=attachment%3Bfilename%3D%22BilibiliJJ.COM-%25E3%2580%25901080P%25E3%2580%2591%25E5%25A6%2584%25E6%2583%25B3%25E5%25AD%25A6%25E7%2594%259F%25E4%25BC%259A%25E7%25AC%25AC%25E4%25B8%2580%25E5%25AD%25A3OVAOAD%25E3%2580%2590%25E4%25B8%25AD%25E6%2597%25A5%25E5%258F%258C%25E8%25AF%25AD%25E5%25AD%2597%25E5%25B9%2595%25E3%2580%2591_12%25E3%2580%2581%25E7%25AC%25AC%25E5%258D%2581%25E4%25BA%258C%25E9%259B%2586.mp4%22&AWSAccessKeyId=fb9c2f0f68c98e38b0a3&Signature=abBXfJqOib3pFuzYHhadCQ68ZUQ%3D" type="video/mp4"></source>
-						当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
-					</video>
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="player" id="playeBox">
+						<div class="boxTitle">
+							<h4>动画标题</h4>
+						</div>
+						<div class="playerContent">
+							<!--<video width="100%" height="" controls="controls">
+								<source src="http://www.w3school.com.cn/i/movie.ogg" type="video/mp4"></source>
+								当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+							</video>-->
+							<embed height="" width="100%" quality="high" id="player" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=5239616&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
+							<script type="text/javascript">
+								window.onload=function(){
+									var w=document.getElementById("playeBox")
+									var pl=document.getElementById("player");
+									pl.height=w.offsetWidth-100;									
+								}
+							</script>
+						</div>
+					</div>
+					<div class="box">
+						<!-- 多说评论框 start -->
+						<div class="ds-thread" data-thread-key="anime" data-title="动画模板" data-url="gxstar.cf/bangumi"></div>
+						<!-- 多说评论框 end -->
+					</div>
 				</div>
 			</div>
 		</div>
