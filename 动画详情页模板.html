@@ -53,29 +53,61 @@
 			</header>
 			<div class="row">
 				<div class="col-sm-8">
-					<div class="player" id="playeBox">
+					<div class="player" id="playerBox">
 						<div class="boxTitle">
 							<h4>动画标题</h4>
 						</div>
 						<div class="playerContent">
 							<!--<video width="100%" height="" controls="controls">
-								<source src="http://www.w3school.com.cn/i/movie.ogg" type="video/mp4"></source>
+								<source src="" type="video/mp4"></source>
 								当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
 							</video>-->
 							<embed height="" width="100%" quality="high" id="player" allowfullscreen="true" type="application/x-shockwave-flash" src="http://static.hdslb.com/miniloader.swf" flashvars="aid=5239616&page=1" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash"></embed>
-							<script type="text/javascript">
-								window.onload=function(){
-									var w=document.getElementById("playeBox")
-									var pl=document.getElementById("player");
-									pl.height=w.offsetWidth-100;									
-								}
-							</script>
 						</div>
 					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="player" id="playerList">
+						<div class="boxTitle">
+							<h4>剧集列表</h4>
+						</div>
+						<ul class="row">
+							<li class="col-sm-6"><button type="button" class="btn btn-primary">第一话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第二话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第三话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第四话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第五话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第六话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第七话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第八话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第九话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第十话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第十一话</button></li>
+							<li class="col-sm-6"><button type="button" class="btn btn-default">第十二话</button></li>
+						</ul>
+					</div>
+				</div>
+				<script type="text/javascript">
+					window.onload=function(){//设置播放器和播放列表的高度
+						var w=document.getElementById("playerBox")
+						var pl=document.getElementById("player");
+						var plist=document.getElementById("playerList")
+						pl.height=w.offsetWidth-100;
+						plist.style.height=w.offsetHeight+"px";
+					}
+				</script>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
 					<div class="box">
 						<!-- 多说评论框 start -->
 						<div class="ds-thread" data-thread-key="anime" data-title="动画模板" data-url="gxstar.cf/bangumi"></div>
 						<!-- 多说评论框 end -->
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="box">
+						<div class="boxTitle"><h4>其他</h4></div>
 					</div>
 				</div>
 			</div>
