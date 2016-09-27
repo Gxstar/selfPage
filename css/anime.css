@@ -13,11 +13,21 @@
 }
 .player ul{
 	padding-left:25px;
+	width: 100%;
 }
 .player li{
 	/*text-align: center;*/
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+@media only screen and (min-width: 100px) and (max-width: 640px) {
+	.player ul{
+		padding:0;
+		width: 100%;
+	}
+	.player li{
+		text-align: center;
+	}
 }
 .player .btn{
 	width:80%;
