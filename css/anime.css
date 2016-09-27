@@ -20,6 +20,15 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.player .btn{
+	width:80%;
+}
+.player .btn-primary{
+	background-color: #2894FF;
+	border-color: #2894FF;
+}
+
+/*移动端样式*/
 @media only screen and (min-width: 100px) and (max-width: 640px) {
 	.player ul{
 		padding:0;
@@ -28,11 +37,4 @@
 	.player li{
 		text-align: center;
 	}
-}
-.player .btn{
-	width:80%;
-}
-.player .btn-primary{
-	background-color: #2894FF;
-	border-color: #2894FF;
 }
