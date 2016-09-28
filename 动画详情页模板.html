@@ -87,15 +87,6 @@
 						</ul>
 					</div>
 				</div>
-				<script type="text/javascript">
-					window.onload=function(){//设置播放器和播放列表的高度
-						var w=document.getElementById("playerBox")
-						var pl=document.getElementById("player");
-						var plist=document.getElementById("playerList")
-						pl.height=w.offsetWidth-100;
-						plist.style.height=w.offsetHeight+"px";
-					}
-				</script>
 			</div>
 			<div class="row">
 				<div class="col-sm-8">
@@ -106,15 +97,33 @@
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="panel panel-default" style="margin-top: 10px;">
-						<div class="panel-heading">其他</div>
-						<div class="panel-body"></div>
+					<div class="panel panel-default box" style="padding: 0;">
+						<div class="panel-heading">视频来源</div>
+						<div class="panel-body">
+							<ul>
+								<li class="col-xs-6 videoOrigin"><a href="http://www.iqiyi.com" target="_blank"><img src="http://www.qiyipic.com/common/fix/public_images/logo108x35_black.png" alt="爱奇艺" width="100%" /></a></li>
+								<li class="col-xs-6 videoOrigin"><a href="http://www.bilibili.com" target="_blank"><img src="http://i0.hdslb.com/bfs/archive/e090c0fc50ddbe6140dad670292970b116595520.png" alt="哔哩哔哩" width="100%" /></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
 		<!--一些js文件-->
+		<script type="text/javascript">
+			window.onload=function(){
+				//设置播放器和播放列表的高度
+				var w=document.getElementById("playerBox")
+				var pl=document.getElementById("player");
+				var plist=document.getElementById("playerList")
+				pl.height=w.offsetWidth-100;
+				plist.style.height=w.offsetHeight+"px";
+				//设置图标高度相等
+				var img=$(".videoOrigin img");
+				img.attr("height",img.width()*0.35);
+			}
+		</script>
 		<script src="../js/duoshuo.js" type="text/javascript" charset="utf-8"></script>
 		<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 		<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
