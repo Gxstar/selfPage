@@ -12,19 +12,19 @@
 .playerContent{
 	padding:10px;
 }
-.player ul{
-	padding-left:25px;
+#playerList ul{
+	/*padding-left:25px;*/
 	width: 100%;
 }
-.player li{
-	/*text-align: center;*/
+#playerList li{
+	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.player .btn{
+#playerList .btn{
 	width:80%;
 }
-.player .btn-primary{
+#playerList .btn-primary{
 	background-color: #2894FF;
 	border-color: #2894FF;
 }

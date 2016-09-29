@@ -67,24 +67,26 @@
 					</div>
 				</div>
 				<div class="col-sm-4">
-					<div class="player" id="playerList" style="overflow: auto;">
+					<div class="player" id="playerList" style="overflow-y: auto;overflow-x: hidden;">
 						<div class="boxTitle">
 							<h4>剧集列表</h4>
 						</div>
-						<ul class="row">
-							<li class="col-sm-6"><button type="button" class="btn btn-primary">第一话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第二话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第三话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第四话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第五话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第六话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第七话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第八话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第九话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第十话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第十一话</button></li>
-							<li class="col-sm-6"><button type="button" class="btn btn-default">第十二话</button></li>
-						</ul>
+						<div class="row">
+							<ul>
+								<li class="col-sm-6"><button type="button" class="btn btn-primary">1</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">2</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">3</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">4</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">5</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">6</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">7</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">8</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">9</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">10</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">11</button></li>
+								<li class="col-sm-6"><button type="button" class="btn btn-default">12</button></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -112,7 +114,7 @@
 		
 		<!--一些js文件-->
 		<script type="text/javascript">
-			window.onload=function(){
+			function adjust(){
 				//设置播放器和播放列表的高度
 				var w=document.getElementById("playerBox")
 				var pl=document.getElementById("player");
@@ -123,6 +125,8 @@
 				var img=$(".videoOrigin img");
 				img.attr("height",img.width()*0.35);
 			}
+			window.onload=adjust;
+			window.onresize=adjust;
 		</script>
 		<script src="../js/duoshuo.js" type="text/javascript" charset="utf-8"></script>
 		<script src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
