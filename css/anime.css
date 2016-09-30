@@ -1,4 +1,19 @@
 /*通用样式*/
+
+/*滚动条*/
+::-webkit-scrollbar{
+	width:10px;
+}
+::-webkit-scrollbar-track{
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	background-color: #2894FF;
+}
+
 .player{
 	width: auto;
 	border-radius: 5px;
@@ -13,22 +28,30 @@
 	padding:10px;
 }
 #playerList ul{
-	/*padding-left:25px;*/
 	width: 100%;
 }
 #playerList li{
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 #playerList .btn{
 	width:80%;
+	padding:6px 6px;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
-#playerList .btn-primary{
+#playerList .btn-action{
 	background-color: #2894FF;
 	border-color: #2894FF;
+	color: #fff;
 }
-
+.videoOrigin{
+	margin-top:15px;
+	margin-bottom: 15px;
+}
 /*移动端样式*/
 @media only screen and (min-width: 100px) and (max-width: 640px) {
 	.player ul{
